@@ -8,7 +8,9 @@
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
+/* ************ header Start ************ */
 header{
     display: flex;
     justify-content: space-between;
@@ -28,6 +30,8 @@ ul li a{
     color: #fff;
     margin: 0 10px;
 }
+/* ************ header End ************ */
+/* ************ content Start ************ */
 .content{
     display: flex;
     justify-content: space-between;
@@ -57,6 +61,23 @@ ul li a{
 .content image{
     width: 30%;
 }
-.content image img{
-    width: 180px;
+.img{
+    width:180px;
 }
+/* ************ content End ************ */
+/* ************ icons Start ************ */
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+/* ************ icons End ************ */
